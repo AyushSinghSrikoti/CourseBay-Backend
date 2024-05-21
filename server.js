@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json({extended:true}));
 app.use(cors({
-    origin: "https://coursebay-xi.vercel.app/",
+    origin: "https://coursebay-xi.vercel.app",
     methods: "GET,POST,PUT,DELETE", 
     credentials: true,
   }));
