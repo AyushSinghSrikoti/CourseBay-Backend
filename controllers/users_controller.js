@@ -85,7 +85,7 @@ module.exports.destroySession = function(req, res){
 
   module.exports.createSession = function(req,res){
     // req.flash('success' , 'Logged in successfully');
-    return res.redirect('http://localhost:5173/courses');
+    return res.redirect('https://coursebay-xi.vercel.app/courses');
 }  
 
 

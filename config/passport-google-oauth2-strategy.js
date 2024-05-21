@@ -9,7 +9,7 @@ require('dotenv').config();
 passport.use(new GoogleStrategy({
     clientID: "413621638920-telqiemcarfo7f7dk8l0i96bkcbbmgbj.apps.googleusercontent.com",
     clientSecret: "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",
-    callbackURL: "http://localhost:8000/users/auth/google/callback"
+    callbackURL: "https://coursebay-backend-a1dy.onrender.com/users/auth/google/callback"
 }, async (accessToken, refreshToken, profile, done) => {
     try {
         const user = await User.findOne({ email: profile.emails[0].value });
