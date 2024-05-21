@@ -83,10 +83,13 @@ module.exports.destroySession = function(req, res){
   }
 
 
-  module.exports.createSession = function(req,res){
+  module.exports.createSession = function(req, res) {
     // req.flash('success' , 'Logged in successfully');
-    return res.redirect('https://coursebay-xi.vercel.app/courses');
-}  
+    console.log("createSession called");
+    if (!res.headersSent) {
+      return res.redirect('https://coursebay-xi.vercel.app/courses');
+    }
+  };
 
 
 module.exports.updateProfile = async function(req, res) {
