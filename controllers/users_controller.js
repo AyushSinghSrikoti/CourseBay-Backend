@@ -88,7 +88,7 @@ module.exports.destroySession = function(req, res){
     console.log("createSession called");
     if (!res.headersSent) {
       console.log('inside redirect');
-      return res.redirect('https://coursebay-xi.vercel.app/courses');
+      res.redirect('https://coursebay-xi.vercel.app/courses');
     }
   };
 
